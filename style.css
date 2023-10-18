@@ -1,16 +1,19 @@
 body {
+    font-family: 'Roboto', sans-serif;
     background-image: url(/img/travel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
 }
 
 .autonomiaViagem {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
     padding: 20px;
     background-color: white;
     border-radius: 25px;
-    opacity: 85%;
+    opacity: 80%;
     max-width: 600px;
     max-height: 600px;
     display: inline-block;
@@ -18,15 +21,15 @@ body {
 
 .infAutonomiaViagem {
     padding: 5px;
-    display: flex; /* Alterado para usar flexbox */
-    justify-content: flex-end; /* Alinha os itens à direita */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .infoViagem {
     min-width: 200px;
     min-height: 20px;
-    border-radius: 6px;
+    border-radius: 7px;
     border: 1px solid;
     padding: 10px;
     display: inline-block; /* Alterado para "inline-block" para manter o tamanho mínimo */
@@ -35,11 +38,27 @@ body {
 
 label {
     margin-left: 20px;
+    margin-right: 20px;
+}
+
+hr {
+    max-width: 85%;
 }
 
 .calc {
     border-radius: 8px;
+    width: 100%;
     border-color: rgb(155, 155, 155);
-    display: inline;
-    justify-content: center;
+    display: flex;
+}
+
+button {
+    border-radius: 8px;
+    min-width: 130px;
+    min-height: 30px;
+    border-color: rgb(160, 160, 160);
+    border: 1px solid;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
