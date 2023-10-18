@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autonomia de Viagens</title>
-    <link rel="stylesheet" href="style.css"/>
-    <script src="calcAutonomiaViagem.js"></script>
-</head>
-<body>
-    <div class="autonomiaViagem">
-        <div class="infAutonomiaViagem">
-            <label for="nameTravel">Nome da Viagem</label>
-            <input class="infoViagem" type="text" id="travelName" name="nomeViagem" placeholder="Nome da Viagem">
-        </div>
-        <hr>
-        <div class="infAutonomiaViagem">
-            <label for="kmViagem">Quilometragem da Viagem</label>
-            <input class="infoViagem" type="number" 
-            id="travelKM" name="KmViagem" placeholder="Quilometragem da Viagem">
-        </div>
-        <hr>
-        <div class="infAutonomiaViagem">
-            <label for="litrosCombustivel">Litros de Combustível</label>
-            <input class="infoViagem" type="number" id="liters" name="liters" placeholder="Litros de Combustível">
-        </div>
-        <hr>
-        <div class="infAutonomiaViagem">
-            <label for="valorLitro">Valor do Litro</label>
-            <input class="infoViagem" type="number" id="value" name="valorLitro" placeholder="Valor do Litro">
-        </div>
-        <div class="calc">
-            <button onclick="printTravel()">Calcular valores</button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Autonomia de Viagens</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="icon" href="/favicon/favicon.png" type="image/x-icon">
+        <script src="script.js"></script>   
+    </head>
+    <body>
+        
+        <div class="autonomiaViagem">
+            <h2>Autonomia de Viagem</h2>
+            <div class="infAutonomiaViagem">
+                <label for="nameTravel">Nome da Viagem</label>
+                <input class="infoViagem" type="text" id="travelName" name="nomeViagem" placeholder="Nome da Viagem">
+            </div>
+            <hr>
+            <div class="infAutonomiaViagem">
+                <label for="kmViagem">Quilometragem da Viagem</label>
+                <input class="infoViagem" type="number" 
+                id="travelKM" name="KmViagem" placeholder="Quilometragem da Viagem">
+            </div>
+            <hr>
+            <div class="infAutonomiaViagem">
+                <label for="litrosCombustivel">Litros de Combustível</label>
+                <input class="infoViagem" type="number" id="liters" name="liters" placeholder="Litros de Combustível">
+            </div>
+            <hr>
+            <div class="infAutonomiaViagem">
+                <label for="valorLitro">Valor do Litro</label>
+                <input class="infoViagem" type="number" id="value" name="valorLitro" placeholder="Valor do Litro">
+            </div>
+            <div class="calc">
+                <button onclick="printTravel()">Calcular valores</button>
+            </div>
+            <div id="result"></div>
         </div>
         <div id="result"></div>
-    </div>
-    <div id="result"></div>
-</body>
+    </body>
 </html>

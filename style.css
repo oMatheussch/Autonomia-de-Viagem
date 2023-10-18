@@ -9,7 +9,7 @@ body {
 .autonomiaViagem {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
+    margin-top: 8%;
     padding: 20px;
     background-color: white;
     border-radius: 25px;
@@ -32,8 +32,8 @@ body {
     border-radius: 7px;
     border: 1px solid;
     padding: 10px;
-    display: inline-block; /* Alterado para "inline-block" para manter o tamanho mínimo */
-    margin-left: 10px; /* Adicionado para criar um espaço entre os inputs */
+    display: inline-block;
+    margin-left: 10px;
 }
 
 label {
@@ -61,4 +61,8 @@ button {
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+}
+
+h2 {
+    text-align: center;
 }
